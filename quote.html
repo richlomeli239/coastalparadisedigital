@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Custom Proposal &amp; Ad Strategy Quote | Coastal Paradise Digital | SWFL</title>
+  <meta name="description" content="Request a custom advertising proposal, media plan, or web design quote for your business in Fort Myers (33919), Cape Coral, Naples, and Southwest Florida." />
+  <link rel="canonical" href="https://coastalparadisedigital.com/quote.html" />
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coastalparadisedigital.com/quote.html" />
+  <meta property="og:title" content="Custom Proposal &amp; Strategy Quote | Coastal Paradise Digital" />
+  <meta property="og:description" content="Get an itemized advertising proposal and performance estimate for your business in Southwest Florida." />
+  <meta property="og:image" content="https://coastalparadisedigital.com/assets/images/og-image.png" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Translucent Video Background -->
+  <div class="hero-video-backdrop" style="position: fixed; z-index: 0;" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/images/og-image.png">
+      <source src="assets/videos/consultation-meeting.mp4" type="video/mp4" />
+      <source src="assets/videos/hero-coastal-digital.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-video-scrim" style="background: rgba(6, 10, 14, 0.92);"></div>
+  </div>
+
+  <div class="escher-grid-overlay" aria-hidden="true"></div>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo-link" aria-label="Coastal Paradise Digital Home">
+        <img src="assets/images/logo.png" alt="Coastal Paradise Digital Logo" />
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="services.html">The 8 Pillars</a></li>
+          <li class="nav-item"><a href="media-buying.html">Media Buying</a></li>
+          <li class="nav-item"><a href="index.html#estimator">Estimator</a></li>
+          <li class="nav-item"><a href="about.html">About &amp; Pedigree</a></li>
+          <li class="nav-item"><a href="quote.html" class="active">Custom Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:2393180510" class="phone-quick-pill" title="Direct Line to Agency Founder">
+          <i class="fa-solid fa-phone"></i>
+          <span>(239) 318-0510</span>
+        </a>
+        <button type="button" class="btn-primary" onclick="openPaymentModal()">
+          <i class="fa-solid fa-lock"></i> Pay Retainer
+        </button>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" style="position: relative; z-index: 2;">
+    <!-- Header Banner -->
+    <section class="section-padding" style="padding-top: 60px; padding-bottom: 40px; text-align: center;">
+      <div class="container" style="max-width: 820px;">
+        <div class="badge-tag teal-tag">
+          <i class="fa-solid fa-file-invoice"></i> Itemized Growth Blueprint
+        </div>
+        <h1 class="section-title">
+          Request Your <span class="highlight-gold">Custom Proposal</span> &amp; <span class="highlight-teal">Quote</span>
+        </h1>
+        <p class="section-subtitle">
+          Tell us about your business goals. We'll analyze your market territory, inspect your current digital footprint, and deliver an itemized strategy within 24 business hours.
+        </p>
+
+        <!-- Direct Instant Contact Bar -->
+        <div style="display: inline-flex; gap: 16px; margin-top: 24px; flex-wrap: wrap; justify-content: center;">
+          <a href="tel:2393180510" class="btn-secondary" style="padding: 10px 20px; font-size: 0.88rem;">
+            <i class="fa-solid fa-phone"></i> Call Direct: (239) 318-0510
+          </a>
+          <a href="mailto:richlomeli239@gmail.com" class="btn-outline" style="padding: 10px 20px; font-size: 0.88rem;">
+            <i class="fa-solid fa-envelope"></i> Email: richlomeli239@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Proposal Form Card -->
+    <section style="padding-bottom: 100px;">
+      <div class="container" style="max-width: 960px;">
+        <div class="quote-form-card">
+          <form id="proposalForm" onsubmit="handleProposalSubmit(event)">
+            
+            <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-address-card text-gold"></i> 1. Contact &amp; Business Information
+            </h3>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contactName">Your Full Name *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Sarah Jenkins" required />
+              </div>
+              <div class="form-group">
+                <label for="businessName">Business / Organization Name *</label>
+                <input type="text" id="businessName" class="form-control" placeholder="e.g. Gulf Coast Air Conditioning" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contactEmail">Business Email *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="e.g. sarah@gulfcoastac.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Direct Phone Number *</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. (239) 555-0199" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="websiteUrl">Current Website (If applicable)</label>
+                <input type="url" id="websiteUrl" class="form-control" placeholder="https://yourbusiness.com" />
+              </div>
+              <div class="form-group">
+                <label for="serviceArea">Primary Service Zip Code / Cities *</label>
+                <input type="text" id="serviceArea" class="form-control" placeholder="e.g. 33919, Fort Myers, Cape Coral, Naples" required />
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.4rem; color: #fff; margin-top: 36px; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-sliders text-teal"></i> 2. Marketing Services Needed
+            </h3>
+
+            <div class="calc-channels-grid" style="margin-bottom: 30px;">
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Google Search & PMax" checked />
+                <span>Google Search &amp; Performance Max</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Local SEO & GEO" checked />
+                <span>Local SEO &amp; AI Search (GEO)</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Custom Web Design" checked />
+                <span>Custom High-Performance Web Creation</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Meta & LinkedIn Ads" checked />
+                <span>Meta (Facebook/IG) &amp; LinkedIn Ads</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Media Buying (TV/Radio/OOH)" />
+                <span>Media Buying (TV, Radio, Highway Billboards)</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Server-Side Tracking" checked />
+                <span>Server-Side Telemetry (sGTM &amp; CAPI)</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="Google My Business Setup" checked />
+                <span>Google My Business (GBP) Optimization</span>
+              </label>
+              <label class="channel-check-label">
+                <input type="checkbox" name="services" value="AI Lead Chatbot" />
+                <span>AI Lead Capture Chatbots &amp; Workflows</span>
+              </label>
+            </div>
+
+            <div class="form-group slider-container" style="margin-bottom: 30px;">
+              <div class="slider-header">
+                <label for="quoteBudgetSlider"><i class="fa-solid fa-dollar-sign text-gold"></i> Targeted Monthly Ad Spend / Investment</label>
+                <span id="quoteBudgetDisplay" class="slider-display-val">$4,500/mo</span>
+              </div>
+              <input
+                type="range"
+                id="quoteBudgetSlider"
+                class="custom-slider"
+                min="1500"
+                max="25000"
+                step="500"
+                value="4500"
+              />
+            </div>
+
+            <h3 style="font-size: 1.4rem; color: #fff; margin-top: 36px; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-message text-neon"></i> 3. Project Specifics &amp; Timeline
+            </h3>
+
+            <div class="form-group">
+              <label for="projectGoals">What are your main goals or current advertising frustrations?</label>
+              <textarea id="projectGoals" class="form-control" placeholder="e.g. We want to generate 25 more residential service calls per month in Fort Myers. Our current ad agency isn't tracking phone calls and costs keep rising."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="paymentPreference">Preferred Retainer &amp; Billing Method</label>
+              <select id="paymentPreference" class="form-control">
+                <option value="zelle">Zelle® Direct Bank Transfer (Instant • Zero Processing Fees)</option>
+                <option value="invoice">Digital Invoice &amp; Agreement (Credit Card / ACH)</option>
+                <option value="phone">Direct Phone Confirmation with Rich Lomeli</option>
+              </select>
+            </div>
+
+            <div id="formSuccessAlert" style="display: none; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--matrix-emerald); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 24px; color: #fff; font-size: 0.95rem;">
+              <i class="fa-solid fa-circle-check text-neon" style="font-size: 1.2rem; margin-right: 8px;"></i>
+              <strong>Thank you! Your custom proposal request has been received.</strong><br />
+              Rich Lomeli will personally review your market data and reach out via phone/email within 24 hours. For immediate assistance, call <strong>(239) 318-0510</strong>.
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; padding: 16px; font-size: 1.05rem;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Strategy Request &amp; Receive Custom Proposal
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Retainer Payment Modal -->
+  <div id="paymentModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="payment-modal-box">
+      <button type="button" class="close-modal-btn" id="closePaymentModal" aria-label="Close Payment Modal">&times;</button>
+      <h3 id="modalTitle" class="modal-title">Secure Client Retainer &amp; Payments</h3>
+      <p class="modal-subtitle">Coastal Paradise Digital accepts instant bank transfers via Zelle®, digital invoicing (Credit Card / ACH), or direct phone confirmation.</p>
+
+      <div class="payment-option-card">
+        <div class="payment-option-header">
+          <span class="payment-option-title"><i class="fa-solid fa-bolt text-gold"></i> Zelle® Direct Transfer</span>
+          <span class="payment-badge">Instant • Zero Processing Fees</span>
+        </div>
+        <p class="payment-desc">Send retainer deposits securely from your mobile banking app directly to our business account with zero transaction fees.</p>
+        <div class="payment-info-box">
+          Zelle Phone: <strong>(239) 318-0510</strong><br />
+          Zelle Email: <strong>richlomeli239@gmail.com</strong><br />
+          Registered Name: <strong>Rich Lomeli / Coastal Paradise</strong>
+        </div>
+        <div style="margin-top: 12px; display: flex; gap: 10px;">
+          <button type="button" class="btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-copy="richlomeli239@gmail.com">
+            <i class="fa-regular fa-copy"></i> Copy Zelle Email
+          </button>
+          <button type="button" class="btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-copy="2393180510">
+            <i class="fa-regular fa-copy"></i> Copy Phone Number
+          </button>
+        </div>
+      </div>
+
+      <div class="payment-option-card">
+        <div class="payment-option-header">
+          <span class="payment-option-title"><i class="fa-solid fa-file-invoice-dollar text-teal"></i> Request Retainer Invoice &amp; Agreement</span>
+          <span class="payment-badge">Credit Card / ACH</span>
+        </div>
+        <p class="payment-desc">Need a formal digital Master Services Agreement (MSA) and itemized invoice for your accounting department? We accept all major credit cards and bank ACH.</p>
+        <button type="button" onclick="closePaymentModal()" class="btn-secondary" style="width: 100%; justify-content: center; padding: 10px 18px; font-size: 0.85rem;">
+          <i class="fa-solid fa-check"></i> Fill Out Proposal Form on This Page
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive AI Chatbot Widget -->
+  <button type="button" id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Open Digital Concierge Chat">
+    <i class="fa-solid fa-comments"></i>
+    <span class="chatbot-unread-badge">1</span>
+  </button>
+
+  <div id="chatbotWindow" class="chatbot-window" role="dialog" aria-label="Digital Marketing Concierge">
+    <div class="chatbot-header">
+      <div class="chatbot-identity">
+        <div class="chatbot-avatar"><i class="fa-solid fa-microchip"></i></div>
+        <div class="chatbot-meta">
+          <h5>Paradise Digital Concierge</h5>
+          <span><i class="fa-solid fa-circle" style="font-size: 0.55rem;"></i> Active • AI Assistant</span>
+        </div>
+      </div>
+      <button type="button" id="chatbotCloseBtn" class="chatbot-close-btn" aria-label="Close Chat">&times;</button>
+    </div>
+
+    <div id="chatbotMessages" class="chatbot-messages"></div>
+
+    <div class="chatbot-input-bar">
+      <input type="text" id="chatbotInput" placeholder="Ask about services, pricing, areas..." />
+      <button type="button" id="chatbotSendBtn" class="chatbot-send-btn" aria-label="Send message">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo-link">
+            <img src="assets/images/logo.png" alt="Coastal Paradise Digital Logo" />
+          </a>
+          <p>
+            Enterprise AdTech, Omnichannel Media Buying, High-Performance Web Development, and Local SEO engineered for Fort Myers, Naples, and Southwest Florida.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The 8 Pillars</h4>
+          <ul class="footer-links">
+            <li><a href="media-buying.html">Media Buying (TV/Radio/OOH)</a></li>
+            <li><a href="services.html#google-ads">Google Paid Search (SEM)</a></li>
+            <li><a href="services.html#seo-geo">Local SEO &amp; AI Search (GEO)</a></li>
+            <li><a href="services.html#web-design">Custom Web Creation &amp; UX</a></li>
+            <li><a href="services.html#paid-social">Full-Funnel Meta Ads</a></li>
+            <li><a href="services.html#server-side-tracking">Server-Side Telemetry (CAPI)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="media-buying.html">Media Procurement</a></li>
+            <li><a href="index.html#estimator">ROI Estimator Tool</a></li>
+            <li><a href="about.html">About &amp; Pedigree</a></li>
+            <li><a href="quote.html">Request Custom Proposal</a></li>
+            <li><a href="privacy.html">Privacy &amp; Data Policy</a></li>
+            <li><a href="javascript:void(0)" onclick="openPaymentModal()">Pay Retainer</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Direct Phone / Text:</strong><br />
+              <a href="tel:2393180510" style="color: var(--teal-light);">(239) 318-0510</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Direct Email:</strong><br />
+              <a href="mailto:richlomeli239@gmail.com" style="color: var(--teal-light);">richlomeli239@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Headquarters:</strong><br />
+              Fort Myers, FL 33919<br />
+              Serving all of Southwest Florida
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Coastal Paradise Digital. All Rights Reserved. Veteran-Owned &amp; Operated in Fort Myers, FL 33919.
+        </div>
+        <div>
+          Sister Company: 
+          <a href="https://coastalparadiseevents.com" target="_blank" rel="noopener noreferrer" class="footer-sister-link">
+            Coastal Paradise Events (DJ, MC &amp; Entertainment)
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // URL Parameter auto-fill from Estimator
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const budgetParam = urlParams.get('budget');
+      const channelsParam = urlParams.get('channels');
+      const slider = document.getElementById('quoteBudgetSlider');
+      const display = document.getElementById('quoteBudgetDisplay');
+
+      if (budgetParam && slider && display) {
+        slider.value = budgetParam;
+        display.textContent = `$${parseInt(budgetParam, 10).toLocaleString()}/mo`;
+      }
+
+      if (slider && display) {
+        slider.addEventListener('input', () => {
+          display.textContent = `$${parseInt(slider.value, 10).toLocaleString()}/mo`;
+        });
+      }
+    });
+
+    function handleProposalSubmit(e) {
+      e.preventDefault();
+      const alertBox = document.getElementById('formSuccessAlert');
+      if (alertBox) {
+        alertBox.style.display = 'block';
+        alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  </script>
+</body>
+</html>
