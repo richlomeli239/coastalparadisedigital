@@ -233,19 +233,26 @@ function initEstimatorEngine() {
     const selectedIndustry = industrySelect ? industrySelect.value : 'home-services';
     const config = industryMultipliers[selectedIndustry] || industryMultipliers['home-services'];
 
-    // Channel weight
+    // Channel weight & operational efficiency
     let activeChannels = 0;
+    let hasOperationalConsulting = false;
     channelCheckboxes.forEach((cb) => {
-      if (cb.checked) activeChannels++;
+      if (cb.checked) {
+        activeChannels++;
+        if (cb.value.toLowerCase().includes('operational')) {
+          hasOperationalConsulting = true;
+        }
+      }
     });
     if (activeChannels === 0) activeChannels = 1;
 
-    // Calculations
+    // Calculations: Operational efficiency improves lead conversion & deal yield
+    const efficiencyMultiplier = hasOperationalConsulting ? 1.18 : 1.0;
     const avgCpc = config.cpc;
     const clicks = Math.round(budget / avgCpc);
     const impressions = Math.round(clicks * (Math.random() * 8 + 32));
-    const leads = Math.max(Math.round(clicks * config.conv), 4);
-    const estimatedNewDeals = Math.max(Math.round(leads * 0.28), 1);
+    const leads = Math.max(Math.round(clicks * config.conv * efficiencyMultiplier), 4);
+    const estimatedNewDeals = Math.max(Math.round(leads * (hasOperationalConsulting ? 0.32 : 0.28)), 1);
     const pipelineRevenue = Math.round(estimatedNewDeals * config.ticket);
     const roasMultiplier = (pipelineRevenue / budget).toFixed(1);
 
@@ -371,7 +378,7 @@ function initChatbotEngine() {
       if (q.includes('service') || q === 'services') {
         appendMessage(
           'bot',
-          `We deliver enterprise marketing engineered for Southwest Florida businesses:
+          `We deliver enterprise growth architecture engineered for Southwest Florida businesses:
            <br><br>
            1. <strong>Omnichannel Media Buying</strong> (TV, Radio, Billboards, Streaming)<br>
            2. <strong>Google Ads & Paid Search</strong> (PMax, Search, YouTube)<br>
@@ -380,10 +387,24 @@ function initChatbotEngine() {
            5. <strong>Meta & Paid Social</strong> (Facebook, IG, LinkedIn)<br>
            6. <strong>Google My Business</strong> (5-Star Reputation Engine)<br>
            7. <strong>Server-Side Telemetry</strong> (sGTM & Meta CAPI - No signal loss)<br>
-           8. <strong>AI Automation & Chatbots</strong> (24/7 lead capture)`,
+           8. <strong>AI Automation & Chatbots</strong> (24/7 lead capture)<br>
+           9. <strong>Operational Consultancy & Transition</strong> (In-housing, process audits & data stream capture)`,
           [
             { label: 'Get a Custom Quote', action: 'quote' },
             { label: 'Book 15-Min Call', action: 'book' },
+          ]
+        );
+      } else if (q.includes('consult') || q.includes('operat') || q.includes('in-house') || q.includes('inhouse') || q.includes('transition') || q.includes('process')) {
+        appendMessage(
+          'bot',
+          `<strong>Operational Consultancy & In-House Transition Services:</strong><br><br>
+           • <strong>Agency-to-In-House Transition:</strong> Eliminate 20–35% in perpetual agency retainers. We audit contracts, build SOPs, train your internal staff, and execute a zero-downtime handoff.<br>
+           • <strong>Business Process Streamlining:</strong> We review existing workflows to eliminate operational friction and expensive software bloat.<br>
+           • <strong>Data Stream Capture:</strong> We integrate modern tech to capture previously uncaptured data streams (offline conversions, phone calls, CRM lifecycle events).<br><br>
+           Engagements range from Diagnostic Audits ($3,500–$5,000 sprint) to Full Agency In-Sourcing Roadmaps ($5,000–$10,000/mo).`,
+          [
+            { label: 'Request Proposal', action: 'quote' },
+            { label: 'Call 941-500-2566', action: 'call' },
           ]
         );
       } else if (q.includes('area') || q.includes('zip') || q.includes('location')) {

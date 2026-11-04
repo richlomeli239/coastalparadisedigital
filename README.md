@@ -14,6 +14,7 @@ Coastal Paradise Digital is a high-performance B2B digital media, advertising, a
 6. **Google Business Profile (GBP) & 5-Star Reputation:** Geotagged profile updates, local review acquisition funnels, and citation consistency.
 7. **Server-Side Telemetry & Conversion Engineering:** Server-Side Google Tag Manager (sGTM), Meta Conversions API (CAPI), CallRail Dynamic Number Insertion (DNI), and real-time Looker Studio dashboards.
 8. **AI Workflow Automation & Lead Chatbots:** 24/7 intelligent zero-cost client-side conversational AI assistants for instant lead capture and CRM synchronization.
+9. **Operational Consultancy & Transition Services:** Business process reviews, agency in-sourcing roadmaps, MarTech consolidation, and full-funnel data stream capture.
 
 ## Features & Interactivity
 - **Interactive Escher-Matrix Particle Canvas:** Dynamic constellation canvas reacting to cursor coordinates and mouse clicks.
