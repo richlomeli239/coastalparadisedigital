@@ -62,9 +62,14 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="tel:9415002566" class="phone-quick-pill" title="Direct Line to Agency Founder">
+        <a href="tel:9415002566" class="phone-quick-pill" title="Call 941-500-2566" aria-label="Call 941-500-2566">
           <i class="fa-solid fa-phone"></i>
-          <span>941-500-2566</span>
+          <span class="pill-phone-label">Call</span>
+          <span class="pill-phone-number">941-500-2566</span>
+        </a>
+        <a href="mailto:info@coastalparadisedigital.com" class="email-quick-pill" title="Email info@coastalparadisedigital.com" aria-label="Email info@coastalparadisedigital.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
         </a>
         <button type="button" class="btn-primary" onclick="openPaymentModal()">
           <i class="fa-solid fa-lock"></i> Pay Retainer
@@ -97,7 +102,7 @@
           <a href="tel:9415002566" class="btn-secondary" style="padding: 10px 20px; font-size: 0.88rem;">
             <i class="fa-solid fa-phone"></i> Call Direct: 941-500-2566
           </a>
-          <a href="mailto:Info@coastalparadisedigital.com" class="btn-outline" style="padding: 10px 20px; font-size: 0.88rem;">
+          <a href="mailto:info@coastalparadisedigital.com" class="btn-outline" style="padding: 10px 20px; font-size: 0.88rem;">
             <i class="fa-solid fa-envelope"></i> Email: Info@coastalparadisedigital.com
           </a>
         </div>
@@ -307,6 +312,24 @@
   <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
+      <!-- Centered Direct Contact Action Bar -->
+      <div class="footer-cta-bar">
+        <div class="footer-cta-inner">
+          <span class="footer-cta-badge"><i class="fa-solid fa-bolt text-teal"></i> Direct Connect</span>
+          <h3 class="footer-cta-heading">Speak Directly with Agency Principal Rich Lomeli</h3>
+          <div class="footer-cta-buttons">
+            <a href="tel:9415002566" class="footer-btn footer-btn-call" title="Call 941-500-2566">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call 941-500-2566</span>
+            </a>
+            <a href="mailto:info@coastalparadisedigital.com" class="footer-btn footer-btn-email" title="Email info@coastalparadisedigital.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email info@coastalparadisedigital.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand-logo-link">
@@ -357,7 +380,7 @@
             <i class="fa-solid fa-envelope"></i>
             <div>
               <strong>Direct Email:</strong><br />
-              <a href="mailto:Info@coastalparadisedigital.com" style="color: var(--teal-light);">Info@coastalparadisedigital.com</a>
+              <a href="mailto:info@coastalparadisedigital.com" style="color: var(--teal-light);">Info@coastalparadisedigital.com</a>
             </div>
           </div>
           <div class="footer-contact-item">
@@ -466,7 +489,7 @@
           alertBox.innerHTML = `
             <i class="fa-solid fa-circle-check text-neon" style="font-size: 1.2rem; margin-right: 8px;"></i>
             <strong>Thank you! Your request details are recorded.</strong><br />
-            To ensure zero signal loss, you can also <a href="mailto:Info@coastalparadisedigital.com?subject=Proposal Request: ${encodeURIComponent(payload.business)}&body=Name: ${encodeURIComponent(payload.name)}%0APhone: ${encodeURIComponent(payload.phone)}%0ABudget: ${encodeURIComponent(payload.budget)}%0AServices: ${encodeURIComponent(payload.services)}" style="color:var(--teal-light); text-decoration:underline; font-weight:700;">click here to send a direct email copy</a> or call <strong>941-500-2566</strong>.
+            To ensure zero signal loss, you can also <a href="mailto:info@coastalparadisedigital.com?subject=Proposal Request: ${encodeURIComponent(payload.business)}&body=Name: ${encodeURIComponent(payload.name)}%0APhone: ${encodeURIComponent(payload.phone)}%0ABudget: ${encodeURIComponent(payload.budget)}%0AServices: ${encodeURIComponent(payload.services)}" style="color:var(--teal-light); text-decoration:underline; font-weight:700;">click here to send a direct email copy</a> or call <strong>941-500-2566</strong>.
           `;
           alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
