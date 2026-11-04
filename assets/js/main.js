@@ -388,10 +388,27 @@ function initChatbotEngine() {
            6. <strong>Google My Business</strong> (5-Star Reputation Engine)<br>
            7. <strong>Server-Side Telemetry</strong> (sGTM & Meta CAPI - No signal loss)<br>
            8. <strong>AI Automation & Chatbots</strong> (24/7 lead capture)<br>
-           9. <strong>Operational Consultancy & Transition</strong> (In-housing, process audits & data stream capture)`,
+           9. <strong>Operational Consultancy & Transition</strong> (In-housing, process audits & data stream capture)<br><br>
+           <em>Upcoming Q2 2027 Roadmap: Pillars 10–12 in Enterprise Networking, Cybersecurity & Threat Analysis (CompTIA Network+, Security+, CySA+).</em>`,
           [
             { label: 'Get a Custom Quote', action: 'quote' },
+            { label: 'View 2027 Roadmap', action: 'roadmap' },
             { label: 'Book 15-Min Call', action: 'book' },
+          ]
+        );
+      } else if (q.includes('cyber') || q.includes('security') || q.includes('network') || q.includes('cysa') || q.includes('comptia') || q.includes('dsdt') || q.includes('penetration') || q.includes('pentest') || q.includes('roadmap') || q.includes('2027')) {
+        appendMessage(
+          'bot',
+          `<strong>Enterprise IT &amp; Cybersecurity Roadmap (Arriving Q2 2027):</strong><br><br>
+           Agency founder Rich Lomeli is currently advancing through <strong>DSDT College's Technology Professional 6</strong> immersion program (networking, cybersecurity, server administration, cloud computing, and penetration testing), preparing for three premier CompTIA credentials in Q2 2027:<br><br>
+           • <strong>Pillar 10: Enterprise Networking &amp; Cloud (CompTIA Network+):</strong> VLAN segmentation, hybrid cloud servers (AWS/GCP/Azure), router/switch provisioning, and encrypted IPsec VPNs.<br>
+           • <strong>Pillar 11: Enterprise Cybersecurity (CompTIA Security+):</strong> Zero-Trust IAM, perimeter defense, endpoint protection (EDR), and compliance audits (NIST CSF, HIPAA, SOC 2).<br>
+           • <strong>Pillar 12: Threat Intelligence &amp; Pentesting (CompTIA CySA+):</strong> Ethical hacking simulations, continuous vulnerability scanning (CVSS), SIEM telemetry, and proactive threat hunting.<br><br>
+           <em>Early scoping is now open for organizations planning late-2027 IT and compliance initiatives!</em>`,
+          [
+            { label: 'Explore Full Roadmap', action: 'roadmap' },
+            { label: 'Pre-Scope 2027 IT Project', action: 'quote' },
+            { label: 'Call 941-500-2566', action: 'call' },
           ]
         );
       } else if (q.includes('consult') || q.includes('operat') || q.includes('in-house') || q.includes('inhouse') || q.includes('transition') || q.includes('process')) {
@@ -456,6 +473,8 @@ function initChatbotEngine() {
         );
       } else if (q.includes('quote')) {
         window.location.href = 'quote.html';
+      } else if (q === 'roadmap') {
+        window.location.href = 'services.html#technology-roadmap';
       } else if (q.includes('payment') || q.includes('zelle') || q.includes('invoice')) {
         openPaymentModal();
       } else {

@@ -16,6 +16,12 @@ Coastal Paradise Digital is a high-performance B2B digital media, advertising, a
 8. **AI Workflow Automation & Lead Chatbots:** 24/7 intelligent zero-cost client-side conversational AI assistants for instant lead capture and CRM synchronization.
 9. **Operational Consultancy & Transition Services:** Business process reviews, agency in-sourcing roadmaps, MarTech consolidation, and full-funnel data stream capture.
 
+## Enterprise Technology & Cybersecurity Roadmap (Arriving Q2 2027)
+In active advancement through **DSDT College's Technology Professional 6** immersion program (networking, cybersecurity, server administration, cloud computing, and penetration testing), launching three advanced technology pillars in **Q2 2027**:
+10. **Enterprise Networking, Systems Administration & Cloud Infrastructure (CompTIA Network+):** High-availability network architecture, enterprise VLAN segmentation, hybrid cloud administration (AWS/GCP/Azure), router/switch provisioning, and encrypted IPsec site-to-site VPNs.
+11. **Enterprise Cybersecurity, Threat Defense & Risk Management (CompTIA Security+):** Zero-Trust Identity & Access Management (IAM), defense-in-depth perimeter engineering, endpoint detection and response (EDR), data encryption (AES-256/TLS 1.3), and compliance auditing (NIST CSF, HIPAA, SOC 2).
+12. **Cybersecurity Analysis, Threat Intelligence & Penetration Testing (CompTIA CySA+):** Authorized penetration testing simulations, continuous vulnerability scanning (CVSS scoring), behavioral threat hunting, SIEM/SOAR telemetry architecture, and digital forensics.
+
 ## Features & Interactivity
 - **Interactive Escher-Matrix Particle Canvas:** Dynamic constellation canvas reacting to cursor coordinates and mouse clicks.
 - **Interactive Ad Spend & ROI Estimator:** Live calculation of impressions, clicks, qualified leads, and projected pipeline revenue by industry and budget.

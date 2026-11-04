@@ -52,7 +52,7 @@
       <nav aria-label="Primary Navigation">
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="services.html">The 9 Pillars</a></li>
+          <li class="nav-item"><a href="services.html">Pillars &amp; Roadmap</a></li>
           <li class="nav-item"><a href="media-buying.html">Media Buying</a></li>
           <li class="nav-item"><a href="cases.html">Case Studies</a></li>
           <li class="nav-item"><a href="index.html#estimator">Estimator</a></li>
@@ -193,10 +193,14 @@
                 <input type="checkbox" name="services" value="Operational Consultancy & Transition" id="cbOperationalConsulting" checked />
                 <span>Operational Consultancy &amp; In-House Transition</span>
               </label>
+              <label class="channel-check-label roadmap-interest-label" style="border-color: rgba(0, 245, 212, 0.4);">
+                <input type="checkbox" name="services" value="Q2 2027 Enterprise IT & Cybersecurity Roadmap" id="cbFutureRoadmap" />
+                <span><i class="fa-solid fa-shield-halved text-neon" style="font-size: 0.8rem; margin-right: 4px;"></i> Enterprise IT &amp; Cybersecurity (Q2 2027 Scoping)</span>
+              </label>
             </div>
 
             <!-- Operational Consultancy & Transition Scope Selector -->
-            <div id="consultingScopeBox" class="form-group" style="background: rgba(18, 27, 36, 0.75); border: 1px solid var(--border-subtle); padding: 22px; border-radius: var(--radius-md); margin-top: 10px; margin-bottom: 30px;">
+            <div id="consultingScopeBox" class="form-group" style="background: rgba(18, 27, 36, 0.75); border: 1px solid var(--border-subtle); padding: 22px; border-radius: var(--radius-md); margin-top: 10px; margin-bottom: 24px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
                 <label style="color: var(--teal-light); font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px; font-size: 1.05rem;">
                   <i class="fa-solid fa-diagram-project"></i> Operational Consultancy &amp; Transition Scope
@@ -221,6 +225,35 @@
                 <div style="background: rgba(0,0,0,0.3); border-left: 2px solid var(--gold-primary); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--text-main); display: flex; flex-direction: column; justify-content: center; gap: 4px;">
                   <strong style="color: var(--gold-light);">Deliverables Included:</strong>
                   <span>Workflow diagnostics, software bloat reduction, SOP development, team enablement, and full-funnel data stream capture.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 2027 Enterprise IT & Cybersecurity Early Scoping Selector -->
+            <div id="roadmapScopeBox" class="form-group" style="background: rgba(14, 76, 73, 0.22); border: 1px solid var(--border-teal); padding: 22px; border-radius: var(--radius-md); margin-bottom: 30px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+                <label style="color: var(--matrix-neon); font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px; font-size: 1.05rem;">
+                  <i class="fa-solid fa-code-branch"></i> Q2 2027 Enterprise IT &amp; Cybersecurity Roadmap Scoping
+                </label>
+                <span class="roadmap-badge" style="font-size: 0.72rem; padding: 3px 10px;">Arriving Q2 2027 • DSDT Tech Pro 6</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px; line-height: 1.6;">
+                Planning an infrastructure overhaul, cloud server migration, or defensive cybersecurity audit for 2027? Select your target technical area to be placed on our priority deployment schedule:
+              </p>
+              <div class="form-grid-2">
+                <div>
+                  <label for="roadmapTierSelect" style="font-size: 0.82rem; color: var(--teal-light); margin-bottom: 6px;">Select Upcoming Technology Area</label>
+                  <select id="roadmapTierSelect" class="form-control" style="font-size: 0.88rem;">
+                    <option value="None / Marketing Focus Only">None / Marketing &amp; Operations Focus Only</option>
+                    <option value="Pillar 10: CompTIA Network+ Infrastructure (LAN/VLAN/Cloud/VPN)">Pillar 10: Enterprise Networking &amp; Cloud Infrastructure (CompTIA Network+)</option>
+                    <option value="Pillar 11: CompTIA Security+ Cyber Defense (Zero-Trust/EDR/Compliance)">Pillar 11: Enterprise Cybersecurity &amp; Risk Management (CompTIA Security+)</option>
+                    <option value="Pillar 12: CompTIA CySA+ Threat Hunting & Penetration Testing">Pillar 12: Cyber Threat Intelligence &amp; Penetration Testing (CompTIA CySA+)</option>
+                    <option value="Full Comprehensive IT & Security Architecture (Pillars 10-12)">Full Comprehensive IT &amp; Security Architecture (Pillars 10–12)</option>
+                  </select>
+                </div>
+                <div style="background: rgba(0,0,0,0.35); border-left: 2px solid var(--matrix-neon); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--text-main); display: flex; flex-direction: column; justify-content: center; gap: 4px;">
+                  <strong style="color: var(--teal-light);">Pre-Certification Scoping:</strong>
+                  <span>Early consultations allow businesses to align 2027 IT budgets, compliance timelines, and network architectural blueprints in advance.</span>
                 </div>
               </div>
             </div>
@@ -380,7 +413,7 @@
         </div>
 
         <div>
-          <h4 class="footer-heading">The 9 Pillars</h4>
+          <h4 class="footer-heading">Pillars &amp; Roadmap</h4>
           <ul class="footer-links">
             <li><a href="media-buying.html">Media Buying (TV/Radio/OOH)</a></li>
             <li><a href="services.html#google-ads">Google Paid Search (SEM)</a></li>
@@ -389,6 +422,7 @@
             <li><a href="services.html#paid-social">Full-Funnel Meta Ads</a></li>
             <li><a href="services.html#server-side-tracking">Server-Side Telemetry (CAPI)</a></li>
             <li><a href="services.html#operational-consultancy">Operational Consulting &amp; In-Housing</a></li>
+            <li><a href="services.html#technology-roadmap" style="color: var(--matrix-neon); font-weight: 600;"><i class="fa-solid fa-shield-halved" style="font-size: 0.75rem;"></i> 2027 IT &amp; Cyber Roadmap</a></li>
           </ul>
         </div>
 
@@ -483,6 +517,7 @@
       });
 
       const consultingTier = document.getElementById('consultingTierSelect') ? document.getElementById('consultingTierSelect').value : 'N/A';
+      const roadmapTier = document.getElementById('roadmapTierSelect') ? document.getElementById('roadmapTierSelect').value : 'N/A';
 
       const payload = {
         name: document.getElementById('contactName').value,
@@ -493,6 +528,7 @@
         serviceArea: document.getElementById('serviceArea').value,
         services: selectedServices.join(', '),
         operationalConsultingScope: consultingTier,
+        q2_2027_it_roadmap_scope: roadmapTier,
         budget: `$${parseInt(document.getElementById('quoteBudgetSlider').value, 10).toLocaleString()}/mo`,
         goals: document.getElementById('projectGoals').value || 'N/A',
         billingPreference: document.getElementById('paymentPreference').value,

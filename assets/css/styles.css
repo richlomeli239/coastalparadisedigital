@@ -1017,6 +1017,98 @@ img, video {
 }
 
 /* ========================================================
+   ENTERPRISE IT & CYBERSECURITY ROADMAP (PILLARS 10-12)
+   ======================================================== */
+.roadmap-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 245, 212, 0.1);
+  border: 1px solid rgba(0, 245, 212, 0.4);
+  color: var(--matrix-neon);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.roadmap-cert-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  background: rgba(213, 168, 83, 0.12);
+  border: 1px solid rgba(213, 168, 83, 0.35);
+  color: var(--gold-light);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.pillar-card.roadmap-card {
+  border-color: rgba(45, 212, 191, 0.3);
+  background: linear-gradient(180deg, rgba(18, 27, 36, 0.95) 0%, rgba(11, 17, 24, 0.98) 100%);
+  position: relative;
+}
+
+.pillar-card.roadmap-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--matrix-neon), var(--teal-primary), var(--gold-primary));
+  opacity: 0.85;
+}
+
+.pillar-card.roadmap-card:hover {
+  border-color: var(--matrix-neon);
+  box-shadow: var(--shadow-md), 0 0 25px rgba(0, 245, 212, 0.22);
+}
+
+.roadmap-intro-card {
+  background: linear-gradient(135deg, rgba(14, 76, 73, 0.45) 0%, rgba(18, 27, 36, 0.95) 100%);
+  border: 1px solid var(--border-teal);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.roadmap-intro-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--matrix-neon), var(--teal-primary), var(--gold-primary));
+}
+
+.quote-form-card.roadmap-card {
+  border-color: rgba(45, 212, 191, 0.35);
+  background: linear-gradient(180deg, rgba(18, 27, 36, 0.95) 0%, rgba(11, 17, 24, 0.98) 100%);
+  position: relative;
+}
+
+.quote-form-card.roadmap-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--matrix-neon), var(--teal-primary), var(--gold-primary));
+}
+
+/* ========================================================
    MEDIA BUYER STRATEGY SPOTLIGHT (STRATA / TV / RADIO / OOH)
    ======================================================== */
 .media-buying-spotlight {
