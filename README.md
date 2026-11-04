@@ -24,8 +24,8 @@ Coastal Paradise Digital is a high-performance B2B digital media, advertising, a
 
 ## Contact Information
 - **Principal:** Rich Lomeli
-- **Direct Phone / Text:** (239) 318-0510
-- **Direct Email:** richlomeli239@gmail.com
+- **Direct Phone / Text:** 941-500-2566
+- **Direct Email:** Info@coastalparadisedigital.com
 - **Headquarters:** Fort Myers, FL 33919
 - **Domain:** [https://coastalparadisedigital.com](https://coastalparadisedigital.com)
 - **Sister Enterprise:** [Coastal Paradise Events](https://coastalparadiseevents.com)

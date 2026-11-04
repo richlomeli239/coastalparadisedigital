@@ -424,8 +424,8 @@ function initChatbotEngine() {
           'bot',
           `You can connect directly with agency founder <strong>Rich Lomeli</strong> right now:
            <br><br>
-           📞 <strong>Phone:</strong> <a href="tel:2393180510" style="color:var(--teal-light); text-decoration:underline;">(239) 318-0510</a><br>
-           ✉️ <strong>Email:</strong> <a href="mailto:richlomeli239@gmail.com" style="color:var(--teal-light); text-decoration:underline;">richlomeli239@gmail.com</a><br>
+           📞 <strong>Phone:</strong> <a href="tel:9415002566" style="color:var(--teal-light); text-decoration:underline;">941-500-2566</a><br>
+           ✉️ <strong>Email:</strong> <a href="mailto:Info@coastalparadisedigital.com" style="color:var(--teal-light); text-decoration:underline;">Info@coastalparadisedigital.com</a><br>
            📍 <strong>Location:</strong> Fort Myers, FL 33919<br><br>
            Or click below to submit your project requirements!`,
           [
@@ -440,10 +440,10 @@ function initChatbotEngine() {
       } else {
         appendMessage(
           'bot',
-          `Thank you for your question! Because every business campaign is custom-engineered for your local market, we invite you to speak with Rich Lomeli directly at <strong>(239) 318-0510</strong> or request a custom proposal online.`,
+          `Thank you for your question! Because every business campaign is custom-engineered for your local market, we invite you to speak with Rich Lomeli directly at <strong>941-500-2566</strong> or request a custom proposal online.`,
           [
             { label: 'Request Proposal', action: 'quote' },
-            { label: 'Call (239) 318-0510', action: 'call' },
+            { label: 'Call 941-500-2566', action: 'call' },
           ]
         );
       }
