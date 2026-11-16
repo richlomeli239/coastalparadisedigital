@@ -195,7 +195,7 @@ function initChatbotEngine() {
       } else if (q.includes('area') || q.includes('zip') || q.includes('location') || q.includes('where') || q === 'areas') {
         appendMessage(
           'bot',
-          `We are based right here in <strong>Fort Myers, FL (33919)</strong> and serve businesses across Southwest Florida:
+          `We are based right here in <strong>Fort Myers, FL</strong> and serve businesses across Southwest Florida:
            <br><br>
            • <strong>Lee County:</strong> Fort Myers, Cape Coral, Sanibel, Captiva, Bonita Springs, Estero, Lehigh Acres.<br>
            • <strong>Collier County:</strong> Naples, Marco Island, Pelican Bay.<br>
@@ -222,7 +222,7 @@ function initChatbotEngine() {
            <br><br>
            📞 <strong>Phone:</strong> <a href="tel:9415002566" style="color:var(--teal-light); text-decoration:underline;">941-500-2566</a><br>
            ✉️ <strong>Email:</strong> <a href="mailto:info@coastalparadisedigital.com" style="color:var(--teal-light); text-decoration:underline;">info@coastalparadisedigital.com</a><br>
-           📍 <strong>Location:</strong> Fort Myers, FL 33919<br><br>
+           📍 <strong>Location:</strong> Fort Myers, FL<br><br>
            Or click below to send us a quick note!`,
           [
             { label: 'Go to Contact Page', action: 'contact' },

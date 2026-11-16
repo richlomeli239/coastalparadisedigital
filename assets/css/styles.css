@@ -1441,7 +1441,7 @@ img, video {
 }
 
 /* ========================================================
-   SERVICE REGION & GEOGRAPHIC FOOTPRINT (33919 & SWFL)
+   SERVICE REGION & GEOGRAPHIC FOOTPRINT (SWFL)
    ======================================================== */
 .footprint-section {
   position: relative;
@@ -2061,15 +2061,6 @@ textarea.form-control {
   color: var(--text-dim);
 }
 
-.footer-sister-link {
-  color: var(--gold-primary);
-  font-weight: 600;
-}
-
-.footer-sister-link:hover {
-  color: var(--gold-light);
-  text-decoration: underline;
-}
 
 /* ========================================================
    FOOTER DIRECT ACTION BAR (CENTERED CALL & EMAIL)
