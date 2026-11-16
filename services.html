@@ -21,6 +21,113 @@
   <meta property="og:description" content="Plain-English marketing and website design services built to bring more local customers to your business in Southwest Florida." />
   <meta property="og:image" content="https://coastalparadisedigital.com/assets/images/og-image.png" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://coastalparadisedigital.com/services.html" />
+  <meta name="twitter:title" content="Our Services | Coastal Paradise Digital | SWFL Marketing &amp; Web Design" />
+  <meta name="twitter:description" content="Plain-English marketing, website design, Google Ads, and local SEO services built to bring more local customers to your business in Southwest Florida." />
+  <meta name="twitter:image" content="https://coastalparadisedigital.com/assets/images/og-image.png" />
+
+  <!-- BreadcrumbList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coastalparadisedigital.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://coastalparadisedigital.com/services.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Service Catalog & FAQ Structured Data (AEO & GEO Engine) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Small Business Digital Marketing & Web Design",
+    "provider": {
+      "@type": "AdvertisingAgency",
+      "name": "Coastal Paradise Digital",
+      "url": "https://coastalparadisedigital.com",
+      "telephone": "+1-941-500-2566",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fort Myers",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": ["Fort Myers", "Cape Coral", "Naples", "Marco Island", "Bonita Springs", "Sanibel Island"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Local Business Growth Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google & Microsoft (Bing) Ads", "url": "https://coastalparadisedigital.com/google-bing-ads.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO & Digital Maps", "url": "https://coastalparadisedigital.com/seo-maps.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website Design & E-Commerce", "url": "https://coastalparadisedigital.com/website-design.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Social Media Advertising", "url": "https://coastalparadisedigital.com/social-media-ads.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TV, Radio, Billboards & Print", "url": "https://coastalparadisedigital.com/media-advertising.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google Business Profile", "url": "https://coastalparadisedigital.com/google-business-profile.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Customer Messaging & AI Engineering", "url": "https://coastalparadisedigital.com/customer-messaging-ai.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Marketing & Business Consulting", "url": "https://coastalparadisedigital.com/marketing-consulting.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Graphic Design & Drone Video", "url": "https://coastalparadisedigital.com/graphic-design-drone-video.html"}}
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I know which digital marketing service my business needs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you need immediate customer calls today, Google and Bing Ads are usually best. If you want sustainable long-term calls without paying per click, Local SEO and Google Maps optimization are ideal. If your current website looks dated or fails to convert visitors into callers, a modern custom website redesign is your top priority."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I combine multiple services into one package?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Most clients combine website design with Google Ads and Local SEO for a complete lead generation system. We create custom, affordable bundles designed specifically around your business goals and budget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle drone videography and graphic design in-house?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide complete 4K aerial drone video shoots and professional graphic design directly across Southwest Florida, creating stunning assets for your website, commercials, YouTube, social ads, and printed collateral."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we track the results of our marketing campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide straightforward monthly reporting focused on real business metrics: phone calls generated, form submissions received, and new customers gained. No confusing technical jargon—just clear proof of your return on investment."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -95,6 +202,19 @@
   </header>
 
   <main id="main-content" style="position: relative; z-index: 2;">
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-bar">
+      <div class="container" style="max-width: 880px;">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb-list">
+            <li><a href="index.html"><i class="fa-solid fa-house" style="font-size: 0.8rem; margin-right: 4px;"></i> Home</a></li>
+            <li class="breadcrumb-separator">/</li>
+            <li class="breadcrumb-current" aria-current="page">Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
     <!-- Header Banner -->
     <section class="section-padding" style="padding-top: 70px; padding-bottom: 50px; text-align: center;">
       <div class="container" style="max-width: 880px;">
@@ -501,6 +621,71 @@
           </div>
         </article>
 
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section (AEO & GEO Engine) -->
+    <section class="section-faq">
+      <div class="container">
+        <div class="faq-header">
+          <div class="badge-tag gold-tag"><i class="fa-solid fa-circle-question"></i> Answers in Plain English</div>
+          <h2 class="section-title">Services <span class="highlight-gold">FAQ</span></h2>
+          <p class="section-subtitle">
+            Everything you need to know about our services, process, and results for Southwest Florida businesses.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>How do I know which digital marketing service my business needs?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>If you need new customer calls immediately, Google and Microsoft Bing search ads are typically the best option because your ads show up at the very moment someone searches for your service. If you want sustainable long-term phone calls without paying for every single click, Local SEO and Google Maps optimization are ideal. If your website looks outdated or fails to turn visitors into phone calls, a modern custom redesign is your top priority.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can I combine multiple services into one package?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Many small businesses combine website design with Google Ads and Local SEO for a complete lead generation system. We build customized, affordable packages based on your specific business goals and monthly budget.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Do you handle drone videography and graphic design in-house?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. We capture 4K aerial drone footage and create professional graphic designs right here in Southwest Florida. We produce stunning visual assets for your website, YouTube channel, social media ads, TV commercials, and printed banners or mailers.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How do we track the results of our marketing campaigns?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>We provide straightforward monthly reporting focused on real business metrics: phone calls generated, form submissions received, and new customers gained. No confusing technical jargon—just clear proof of your return on investment.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Do I need to sign a long-term contract?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>No. We work on flexible month-to-month retainers. We believe in earning your business every single month through measurable phone calls, new customers, and dedicated local support.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
