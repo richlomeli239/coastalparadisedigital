@@ -1,38 +1,30 @@
 # Coastal Paradise Digital (coastalparadisedigital.com)
 
-> Premier Enterprise AdTech, Omnichannel Media Buying, High-Performance Web Development, and Local SEO Engineered for Fort Myers (33919) and Southwest Florida. Directed by Rich Lomeli.
+> Local Marketing, Google Ads, Website Design, and Local SEO Engineered for Fort Myers (33919), Cape Coral, Naples, and Southwest Florida.
 
 ## Overview
-Coastal Paradise Digital is a high-performance B2B digital media, advertising, and marketing agency web platform. Influenced by the mathematical symmetry of **M.C. Escher**, the fluid surrealism of **Salvador Dalí**, the minimalist high-contrast aesthetics of **Patrick Nagel**, and the cybernetic telemetry of **The Matrix**.
+Coastal Paradise Digital is a full-service marketing and website design platform built for local businesses across Southwest Florida. We focus on plain-English strategy, fast mobile-friendly websites, high-converting Google and social ads, and honest guidance with no technical smoke-and-mirrors.
 
-## Architecture & Strategic Offerings
-1. **Omnichannel Media Buying & Procurement:** Institutional rate negotiation across TV (broadcast & cable), high-traffic highway billboards (I-75 & US-41), local radio (iHeartMedia SWFL), and Connected TV (OTT), saving clients 15–25% using STRATA and Nielsen ratings data.
-2. **Google Paid Search (SEM) & YouTube Video Ads:** Precision keyword targeting, Performance Max (PMax), and click-fraud suppression.
-3. **Local SEO & Generative Engine Optimization (GEO):** Google Local 3-Pack dominance across 33919, Lee, Collier, and Charlotte counties, with JSON-LD structured data for AI search engines (ChatGPT, Gemini, Perplexity).
-4. **High-Performance Web Creation & UI/UX Design:** Lightning-fast, mobile-first responsive architecture passing all Google Core Web Vitals.
-5. **Full-Funnel Paid Social Media Management:** Meta Certified Facebook & Instagram lead generation, plus LinkedIn B2B Account-Based Marketing (ABM).
-6. **Google Business Profile (GBP) & 5-Star Reputation:** Geotagged profile updates, local review acquisition funnels, and citation consistency.
-7. **Server-Side Telemetry & Conversion Engineering:** Server-Side Google Tag Manager (sGTM), Meta Conversions API (CAPI), CallRail Dynamic Number Insertion (DNI), and real-time Looker Studio dashboards.
-8. **AI Workflow Automation & Lead Chatbots:** 24/7 intelligent zero-cost client-side conversational AI assistants for instant lead capture and CRM synchronization.
-9. **Operational Consultancy & Transition Services:** Business process reviews, agency in-sourcing roadmaps, MarTech consolidation, and full-funnel data stream capture.
+## Core Pages
+- **Home** (`index.html`): High-converting overview of our services, local SWFL service area, and direct contact options with clear background video.
+- **Services** (`services.html`): Deep dive into our 8 core small-business growth services.
+- **Case Studies** (`cases.html`): Documented client performance and results across Lee and Collier counties.
+- **Contact Us** (`contact.html`): Simple, small-business-friendly contact and consultation request form.
+- **Privacy Policy** (`privacy.html`): Clean data privacy and client protection policy.
 
-## Enterprise Technology & Cybersecurity Roadmap (Arriving Q2 2027)
-In active advancement through **DSDT College's Technology Professional 6** immersion program (networking, cybersecurity, server administration, cloud computing, and penetration testing), launching three advanced technology pillars in **Q2 2027**:
-10. **Enterprise Networking, Systems Administration & Cloud Infrastructure (CompTIA Network+):** High-availability network architecture, enterprise VLAN segmentation, hybrid cloud administration (AWS/GCP/Azure), router/switch provisioning, and encrypted IPsec site-to-site VPNs.
-11. **Enterprise Cybersecurity, Threat Defense & Risk Management (CompTIA Security+):** Zero-Trust Identity & Access Management (IAM), defense-in-depth perimeter engineering, endpoint detection and response (EDR), data encryption (AES-256/TLS 1.3), and compliance auditing (NIST CSF, HIPAA, SOC 2).
-12. **Cybersecurity Analysis, Threat Intelligence & Penetration Testing (CompTIA CySA+):** Authorized penetration testing simulations, continuous vulnerability scanning (CVSS scoring), behavioral threat hunting, SIEM/SOAR telemetry architecture, and digital forensics.
-
-## Features & Interactivity
-- **Interactive Escher-Matrix Particle Canvas:** Dynamic constellation canvas reacting to cursor coordinates and mouse clicks.
-- **Interactive Ad Spend & ROI Estimator:** Live calculation of impressions, clicks, qualified leads, and projected pipeline revenue by industry and budget.
-- **Client-Side AI Concierge Chatbot:** 24/7 rule-and-NLP matching chatbot answering service questions, pricing benchmarks, and service areas.
-- **Retainer Payment System:** Seamless payment workflows supporting Zelle® Direct Transfer, digital invoice agreements, and telephone confirmation (in direct synergy with Coastal Paradise Events).
-- **Service Footprint:** Fort Myers (33919), Cape Coral, Naples, Marco Island, Sanibel & Captiva Islands, Bonita Springs, Estero, and Punta Gorda.
+## Services Offered
+1. **Google Ads & Paid Search:** High-intent search and map ads to capture customers ready to buy.
+2. **Local SEO & Google Maps:** Map Pack 3-pack rankings and local keyword targeting across SWFL.
+3. **Website Design & Development:** Fast, responsive, mobile-first websites engineered to turn visitors into phone calls.
+4. **Facebook & Instagram Advertising:** Neighborhood demographic targeting with eye-catching photo and video creative.
+5. **TV, Radio & Billboard Advertising:** Institutional rate negotiation across highway digital boards (I-75 & US-41), local TV, and radio stations.
+6. **Google Business Profile Optimization:** Category optimization, review generation tools, and citation accuracy.
+7. **Customer Messaging & AI Chat:** 24/7 instant website answering to capture leads day and night.
+8. **Marketing & Business Consulting:** Ad spend audits, software cost reduction, and in-house team enablement.
 
 ## Contact Information
-- **Principal:** Rich Lomeli
-- **Direct Phone / Text:** 941-500-2566
-- **Direct Email:** Info@coastalparadisedigital.com
+- **Phone / Text:** 941-500-2566
+- **Email:** info@coastalparadisedigital.com
 - **Headquarters:** Fort Myers, FL 33919
-- **Domain:** [https://coastalparadisedigital.com](https://coastalparadisedigital.com)
+- **Website:** [https://coastalparadisedigital.com](https://coastalparadisedigital.com)
 - **Sister Enterprise:** [Coastal Paradise Events](https://coastalparadiseevents.com)
