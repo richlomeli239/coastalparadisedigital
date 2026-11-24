@@ -24,7 +24,7 @@
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <!-- Schema.org Breadcrumb Data -->
@@ -50,21 +50,44 @@
   </script>
 </head>
 <body>
-
-  <!-- Clear Video Background -->
-  <div class="hero-video-backdrop" style="position: fixed; z-index: 0;" aria-hidden="true">
-    <video autoplay muted loop playsinline preload="auto" poster="assets/images/og-image.png">
-      <source src="assets/videos/hero-coastal-digital.mp4" type="video/mp4" />
-      <source src="assets/videos/aerial-sunset.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-video-scrim"></div>
-  </div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Sticky Site Header -->
   <header class="site-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo-link" aria-label="Coastal Paradise Digital Home">
-        <img src="assets/images/logo.png" alt="Coastal Paradise Digital Logo" />
+        <svg class="brand-shield-svg" viewBox="0 0 110 120" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="shieldGradHeader" x1="12" y1="8" x2="98" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#D5A853"/>
+              <stop offset="52%" stop-color="#87B08A"/>
+              <stop offset="100%" stop-color="#1B7A84"/>
+            </linearGradient>
+          </defs>
+          <path class="brand-shield-outline" d="M55 6 L98 21 V58 C98 85 77 104 55 114 C33 104 12 85 12 58 V21 Z" fill="#131E29" stroke="url(#shieldGradHeader)" stroke-width="3.6"/>
+          <path d="M29 84 C30 66 32 50 36 37" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+          <path d="M36 37 C28 31 20 33 16 39 C22 38 28 39 34 41" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C30 26 22 22 16 25 C23 27 29 31 35 36" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C38 25 46 21 53 24 C46 27 41 31 37 37" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C45 33 52 38 55 45 C49 42 43 40 37 40" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <g class="brand-sun-rays">
+            <path d="M50 61 A15 15 0 0 1 78 61" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+            <line x1="64" y1="39" x2="64" y2="23" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="74" y1="42" x2="84" y2="29" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="81" y1="50" x2="92" y2="43" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="84" y1="60" x2="94" y2="60" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="54" y1="42" x2="46" y2="30" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <g class="brand-waves">
+            <path d="M22 86 C36 82 47 72 57 62 C64 55 74 58 72 67 C68 65 62 67 61 73 C68 78 81 78 92 71" stroke="#4EC0B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 95 C42 93 52 84 62 79 C70 84 80 86 90 80" stroke="#1B7A84" stroke-width="2.8" stroke-linecap="round"/>
+          </g>
+        </svg>
+        <div class="brand-wordmark">
+          <span class="brand-wordmark-top">COASTAL</span>
+          <span class="brand-wordmark-mid">PARADISE</span>
+          <span class="brand-wordmark-bot">DIGITAL</span>
+        </div>
       </a>
 
       <nav aria-label="Primary Navigation">
@@ -72,39 +95,48 @@
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item has-dropdown">
             <a href="services.html" class="nav-link-dropdown">
-              Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+              Services <i class="fa-solid fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
             </a>
+            <button type="button" class="dropdown-arrow-btn" aria-label="Toggle Services Submenu" aria-expanded="false">
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
             <ul class="dropdown-menu" aria-label="Services Submenu">
-              <li><a href="google-bing-ads.html">Google &amp; Microsoft (Bing) Ads</a></li>
-              <li><a href="seo-maps.html">SEO &amp; Digital Maps</a></li>
-              <li><a href="website-design.html">Website Design &amp; E-Commerce</a></li>
-              <li><a href="social-media-ads.html">Social Media Advertising</a></li>
-              <li><a href="media-advertising.html">TV, Radio, Billboards &amp; Print</a></li>
-              <li><a href="google-business-profile.html">Google Business Profile</a></li>
-              <li><a href="customer-messaging-ai.html">Customer Messaging &amp; AI Engineering</a></li>
-              <li><a href="marketing-consulting.html">Marketing &amp; Business Consulting</a></li>
-              <li><a href="graphic-design-drone-video.html">Graphic Design &amp; Drone Video</a></li>
+              <li><a href="google-bing-ads.html"><i class="fa-brands fa-google text-gold"></i> Google &amp; Microsoft (Bing) Ads</a></li>
+              <li><a href="seo-maps.html"><i class="fa-solid fa-map-location-dot text-teal-light"></i> SEO &amp; Digital Maps</a></li>
+              <li><a href="website-design.html"><i class="fa-solid fa-laptop-code text-gold"></i> Website Design &amp; E-Commerce</a></li>
+              <li><a href="social-media-ads.html"><i class="fa-brands fa-meta text-teal-light"></i> Social Media Advertising</a></li>
+              <li><a href="media-advertising.html"><i class="fa-solid fa-tower-broadcast text-gold"></i> TV, Radio, Billboards &amp; Print</a></li>
+              <li><a href="google-business-profile.html"><i class="fa-solid fa-star text-teal-light"></i> Google Business Profile</a></li>
+              <li><a href="customer-messaging-ai.html"><i class="fa-solid fa-comments text-gold"></i> Customer Messaging &amp; AI</a></li>
+              <li><a href="marketing-consulting.html"><i class="fa-solid fa-handshake-angle text-teal-light"></i> Marketing &amp; Business Consulting</a></li>
+              <li><a href="graphic-design-drone-video.html"><i class="fa-solid fa-video text-gold"></i> Graphic Design &amp; Drone Video</a></li>
+              <li class="dropdown-view-all"><a href="services.html">View All 9 Services <i class="fa-solid fa-arrow-right"></i></a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="cases.html">Case Studies</a></li>
+          <li class="nav-item"><a href="index.html#about">About Us</a></li>
           <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          <li class="nav-item mobile-only-nav-item">
+            <button type="button" class="btn-outline" style="width: 100%; justify-content: center; margin-top: 8px;" onclick="openPaymentModal()">
+              <i class="fa-solid fa-lock"></i> Client Pay Retainer
+            </button>
+          </li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <a href="tel:9415002566" class="phone-quick-pill" title="Call 941-500-2566" aria-label="Call 941-500-2566">
-          <i class="fa-solid fa-phone"></i>
-          <span class="pill-phone-label">Call</span>
-          <span class="pill-phone-number">941-500-2566</span>
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>941-500-2566</span>
         </a>
         <a href="mailto:info@coastalparadisedigital.com" class="email-quick-pill" title="Email info@coastalparadisedigital.com" aria-label="Email info@coastalparadisedigital.com">
-          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           <span>Email</span>
         </a>
-        <button type="button" class="btn-primary" onclick="openPaymentModal()">
-          <i class="fa-solid fa-lock"></i> Pay Retainer
-        </button>
-        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <a href="contact.html" class="btn-primary nav-cta-audit">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i> Free Audit
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
@@ -113,67 +145,72 @@
     </div>
   </header>
 
-  <main id="main-content" style="position: relative; z-index: 2;">
-    <!-- Breadcrumb Navigation -->
-    <div class="breadcrumb-bar">
-      <div class="container" style="max-width: 900px;">
-        <nav aria-label="Breadcrumb">
-          <ol class="breadcrumb-list">
-            <li><a href="index.html"><i class="fa-solid fa-house" style="font-size: 0.8rem; margin-right: 4px;"></i> Home</a></li>
-            <li class="breadcrumb-separator">/</li>
-            <li class="breadcrumb-current" aria-current="page">Privacy Policy</li>
-          </ol>
-        </nav>
+  <main id="main-content">
+    <section class="section-navy" style="padding: 46px 0 54px; text-align: center; border-bottom: 3px solid var(--gold-primary);">
+      <div class="container" style="max-width: 820px;">
+        <div class="breadcrumb-bar" style="padding: 0 0 14px;">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb-list" style="justify-content: center;">
+              <li><a href="index.html"><i class="fa-solid fa-house" style="margin-right: 4px;"></i> Home</a></li>
+              <li>/</li>
+              <li class="breadcrumb-current" aria-current="page">Privacy Policy</li>
+            </ol>
+          </nav>
+        </div>
+        <h1 class="section-title" style="margin-bottom: 8px;">Privacy Policy</h1>
+        <p class="section-subtitle">How Coastal Paradise Digital protects your contact and business information.</p>
       </div>
-    </div>
+    </section>
 
-    <section class="section-padding" style="padding-top: 70px; padding-bottom: 90px;">
+    <section class="section-padding section-sand">
       <div class="container" style="max-width: 860px;">
-        <div class="quote-form-card" style="padding: 40px;">
+        <div class="content-card" style="padding: 38px;">
+          
           <h1 class="section-title" style="margin-bottom: 24px; font-size: 2.2rem;">Privacy Policy</h1>
           <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 30px;">
             Effective Date: January 1, 2026 • Last Updated: November 2026
           </p>
 
-          <h2 style="color: #fff; font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">1. Introduction</h2>
-          <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 20px;">
-            At Coastal Paradise Digital ("we," "our," or "us"), we value and respect your privacy. This policy explains what information we collect when you visit <a href="https://coastalparadisedigital.com" style="color: var(--teal-light);">coastalparadisedigital.com</a> or contact our team, and how we protect that information.
+          <h2 style="color: var(--text-ink); font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">1. Introduction</h2>
+          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
+            At Coastal Paradise Digital ("we," "our," or "us"), we value and respect your privacy. This policy explains what information we collect when you visit <a href="https://coastalparadisedigital.com" style="color: var(--teal-primary);">coastalparadisedigital.com</a> or contact our team, and how we protect that information.
           </p>
 
-          <h2 style="color: #fff; font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">2. Information We Collect</h2>
-          <ul style="color: var(--text-main); line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
-            <li><strong style="color: #fff;">Information You Provide:</strong> When you fill out our contact form, call us, or email us, you provide information such as your name, business name, phone number, email address, website URL, and details about your project.</li>
-            <li><strong style="color: #fff;">Standard Website Analytics:</strong> Like most websites, we collect basic technical information such as browser type, general geographic area (such as Southwest Florida), and pages visited, to help us improve our website experience.</li>
+          <h2 style="color: var(--text-ink); font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">2. Information We Collect</h2>
+          <ul style="color: var(--text-body); line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
+            <li><strong style="color: var(--text-ink);">Information You Provide:</strong> When you fill out our contact form, call us, or email us, you provide information such as your name, business name, phone number, email address, website URL, and details about your project.</li>
+            <li><strong style="color: var(--text-ink);">Standard Website Analytics:</strong> Like most websites, we collect basic technical information such as browser type, general geographic area (such as Southwest Florida), and pages visited, to help us improve our website experience.</li>
           </ul>
 
-          <h2 style="color: #fff; font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">3. How We Use Your Information</h2>
-          <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 20px;">
+          <h2 style="color: var(--text-ink); font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">3. How We Use Your Information</h2>
+          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
             We use the information you provide exclusively to:
           </p>
-          <ul style="color: var(--text-main); line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
+          <ul style="color: var(--text-body); line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
             <li>Respond directly to your questions and quote requests.</li>
             <li>Provide marketing consultations and requested services.</li>
             <li>Improve the usability and speed of our website.</li>
           </ul>
-          <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 20px;">
+          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
             <strong>We do not sell, rent, or trade your personal or business information to third-party data brokers or advertisers.</strong>
           </p>
 
-          <h2 style="color: #fff; font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">4. Data Security</h2>
-          <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 20px;">
+          <h2 style="color: var(--text-ink); font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">4. Data Security</h2>
+          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
             We implement strict technical and organizational safeguards to ensure your information is transmitted over encrypted connections (HTTPS/SSL) and stored securely.
           </p>
 
-          <h2 style="color: #fff; font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">5. Contacting Us</h2>
-          <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 10px;">
+          <h2 style="color: var(--text-ink); font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">5. Contacting Us</h2>
+          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 10px;">
             If you have any questions about this privacy policy or would like to request that your information be deleted from our records, please contact our team:
           </p>
-          <div style="background: rgba(0,0,0,0.3); padding: 18px; border-radius: var(--radius-sm); border-left: 3px solid var(--teal-primary); font-size: 0.92rem; color: #fff; line-height: 1.8;">
+          <div style="background: var(--bg-ice); padding: 18px; border-radius: var(--radius-sm); border-left: 3px solid var(--teal-primary); font-size: 0.92rem; color: var(--text-ink); line-height: 1.8;">
             <strong>Coastal Paradise Digital</strong><br />
             Fort Myers, FL<br />
-            Phone: <a href="tel:9415002566" style="color: var(--teal-light);">941-500-2566</a><br />
-            Email: <a href="mailto:info@coastalparadisedigital.com" style="color: var(--teal-light);">info@coastalparadisedigital.com</a>
+            Phone: <a href="tel:9415002566" style="color: var(--teal-primary);">941-500-2566</a><br />
+            Email: <a href="mailto:info@coastalparadisedigital.com" style="color: var(--teal-primary);">info@coastalparadisedigital.com</a>
           </div>
+        
         </div>
       </div>
     </section>
@@ -183,62 +220,118 @@
   <div id="paymentModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="payment-modal-box">
       <button type="button" class="close-modal-btn" id="closePaymentModal" aria-label="Close Payment Modal">&times;</button>
-      <h3 id="modalTitle" class="modal-title">Secure Client Retainer &amp; Payments</h3>
+      <h3 id="modalTitle" class="modal-title">Client Retainer &amp; Invoice Payments</h3>
       <p class="modal-subtitle">Coastal Paradise Digital accepts instant bank transfers via Zelle®, digital invoicing (Credit Card / ACH), or direct phone confirmation.</p>
-
       <div class="payment-option-card">
         <div class="payment-option-header">
           <span class="payment-option-title"><i class="fa-solid fa-bolt text-gold"></i> Zelle® Direct Transfer</span>
-          <span class="payment-badge">Instant • Zero Processing Fees</span>
+          <span class="payment-badge">Instant • Zero Fees</span>
         </div>
-        <p class="payment-desc">Send retainer deposits securely from your mobile banking app directly to our business account with zero transaction fees.</p>
+        <p class="payment-desc">Send retainer deposits directly from your banking app with zero transaction fees.</p>
         <div class="payment-info-box">
           Zelle Phone: <strong>941-500-2566</strong><br />
           Zelle Email: <strong>info@coastalparadisedigital.com</strong><br />
           Registered Name: <strong>Coastal Paradise Digital</strong>
         </div>
-        <div style="margin-top: 12px; display: flex; gap: 10px;">
-          <button type="button" class="btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-copy="info@coastalparadisedigital.com">
-            <i class="fa-regular fa-copy"></i> Copy Zelle Email
-          </button>
-          <button type="button" class="btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-copy="9415002566">
-            <i class="fa-regular fa-copy"></i> Copy Phone Number
-          </button>
+        <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" class="btn-outline" style="font-size: 0.78rem; padding: 7px 14px;" data-copy="info@coastalparadisedigital.com"><i class="fa-regular fa-copy"></i> Copy Email</button>
+          <button type="button" class="btn-outline" style="font-size: 0.78rem; padding: 7px 14px;" data-copy="9415002566"><i class="fa-regular fa-copy"></i> Copy Phone</button>
         </div>
       </div>
+      <div class="payment-option-card">
+        <div class="payment-option-header">
+          <span class="payment-option-title"><i class="fa-solid fa-file-invoice-dollar text-teal-light"></i> Request Retainer Invoice &amp; Agreement</span>
+          <span class="payment-badge">Credit Card / ACH</span>
+        </div>
+        <p class="payment-desc">Need a formal digital agreement and itemized invoice? We accept all major credit cards and ACH transfers.</p>
+        <a href="contact.html" class="btn-secondary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-check"></i> Request Invoice via Contact Form
+        </a>
+      </div>
     </div>
+  </div>
+
+  <!-- Chatbot -->
+  <button type="button" id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Open Digital Concierge Chat" aria-expanded="false">
+    <i class="fa-solid fa-comments"></i>
+    <span class="chatbot-unread-badge">1</span>
+  </button>
+  <div id="chatbotWindow" class="chatbot-window" role="dialog" aria-label="Coastal Paradise Digital Assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-identity">
+        <div class="chatbot-avatar"><i class="fa-solid fa-comments"></i></div>
+        <div class="chatbot-meta">
+          <h5>Coastal Paradise Support</h5>
+          <span><i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> Online • Fast Answers</span>
+        </div>
+      </div>
+      <button type="button" id="chatbotCloseBtn" class="chatbot-close-btn" aria-label="Close Chat">&times;</button>
+    </div>
+    <div id="chatbotMessages" class="chatbot-messages"></div>
+    <div class="chatbot-input-bar">
+      <input type="text" id="chatbotInput" placeholder="Ask about audits, services, pricing..." />
+      <button type="button" id="chatbotSendBtn" class="chatbot-send-btn" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Sticky Mobile Conversion Bar -->
+  <div class="mobile-sticky-cta" aria-label="Quick Contact Actions">
+    <a href="tel:9415002566" class="btn-secondary"><i class="fa-solid fa-phone"></i> Call Now</a>
+    <a href="contact.html" class="btn-primary"><i class="fa-solid fa-bolt"></i> Free Audit</a>
   </div>
 
   <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-cta-bar">
-        <div class="footer-cta-inner">
-          <span class="footer-cta-badge"><i class="fa-solid fa-phone text-teal"></i> Direct Connect</span>
-          <h3 class="footer-cta-heading">Speak Directly With Our Local Team</h3>
-          <div class="footer-cta-buttons">
-            <a href="tel:9415002566" class="footer-btn footer-btn-call" title="Call 941-500-2566">
-              <i class="fa-solid fa-phone"></i>
-              <span>Call 941-500-2566</span>
-            </a>
-            <a href="mailto:info@coastalparadisedigital.com" class="footer-btn footer-btn-email" title="Email info@coastalparadisedigital.com">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Email info@coastalparadisedigital.com</span>
-            </a>
-          </div>
+        <div>
+          <span class="badge-tag" style="margin-bottom: 6px;"><i class="fa-solid fa-phone"></i> Direct Local Access</span>
+          <h3 class="footer-cta-heading">Speak Directly With Our Fort Myers Team</h3>
+        </div>
+        <div class="footer-cta-buttons">
+          <a href="contact.html" class="btn-primary"><i class="fa-solid fa-bolt"></i> Free Marketing Audit</a>
+          <a href="tel:9415002566" class="btn-secondary"><i class="fa-solid fa-phone"></i> 941-500-2566</a>
         </div>
       </div>
 
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="brand-logo-link">
-            <img src="assets/images/logo.png" alt="Coastal Paradise Digital Logo" />
+          <a href="index.html" class="brand-logo-link" aria-label="Coastal Paradise Digital Home">
+            <svg class="brand-shield-svg" viewBox="0 0 110 120" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="shieldGradFooter" x1="12" y1="8" x2="98" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#D5A853"/>
+              <stop offset="52%" stop-color="#87B08A"/>
+              <stop offset="100%" stop-color="#1B7A84"/>
+            </linearGradient>
+          </defs>
+          <path d="M55 6 L98 21 V58 C98 85 77 104 55 114 C33 104 12 85 12 58 V21 Z" fill="#131E29" stroke="url(#shieldGradFooter)" stroke-width="3.6"/>
+          <path d="M29 84 C30 66 32 50 36 37" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+          <path d="M36 37 C28 31 20 33 16 39 C22 38 28 39 34 41" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C30 26 22 22 16 25 C23 27 29 31 35 36" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C38 25 46 21 53 24 C46 27 41 31 37 37" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C45 33 52 38 55 45 C49 42 43 40 37 40" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <g>
+            <path d="M50 61 A15 15 0 0 1 78 61" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+            <line x1="64" y1="39" x2="64" y2="23" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="74" y1="42" x2="84" y2="29" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="81" y1="50" x2="92" y2="43" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="84" y1="60" x2="94" y2="60" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="54" y1="42" x2="46" y2="30" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <g>
+            <path d="M22 86 C36 82 47 72 57 62 C64 55 74 58 72 67 C68 65 62 67 61 73 C68 78 81 78 92 71" stroke="#4EC0B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 95 C42 93 52 84 62 79 C70 84 80 86 90 80" stroke="#1B7A84" stroke-width="2.8" stroke-linecap="round"/>
+          </g>
+        </svg>
+            <div class="brand-wordmark">
+              <span class="brand-wordmark-top">COASTAL</span>
+              <span class="brand-wordmark-mid">PARADISE</span>
+              <span class="brand-wordmark-bot">DIGITAL</span>
+            </div>
           </a>
-          <p>
-            Local marketing, Google advertising, custom website design, and search engine optimization engineered for businesses in Fort Myers, Naples, and Southwest Florida.
-          </p>
+          <p>Small business marketing, Google advertising, custom website design, and local SEO engineered in Fort Myers for Southwest Florida growth.</p>
         </div>
-
         <div>
           <h4 class="footer-heading">Services</h4>
           <ul class="footer-links">
@@ -248,55 +341,33 @@
             <li><a href="social-media-ads.html">Social Media Advertising</a></li>
             <li><a href="media-advertising.html">TV, Radio, Billboards &amp; Print</a></li>
             <li><a href="google-business-profile.html">Google Business Profile</a></li>
-            <li><a href="customer-messaging-ai.html">Customer Messaging &amp; AI Engineering</a></li>
+            <li><a href="customer-messaging-ai.html">Customer Messaging &amp; AI</a></li>
             <li><a href="marketing-consulting.html">Marketing &amp; Business Consulting</a></li>
             <li><a href="graphic-design-drone-video.html">Graphic Design &amp; Drone Video</a></li>
           </ul>
         </div>
-
         <div>
           <h4 class="footer-heading">Navigation</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html">All Services</a></li>
             <li><a href="cases.html">Case Studies</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="contact.html">Free Audit / Contact</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="javascript:void(0)" onclick="openPaymentModal()">Pay Retainer</a></li>
+            <li><button type="button" onclick="openPaymentModal()">Pay Retainer</button></li>
           </ul>
         </div>
-
         <div>
           <h4 class="footer-heading">Direct Contact</h4>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <div>
-              <strong>Direct Phone / Text:</strong><br />
-              <a href="tel:9415002566" style="color: var(--teal-light);">941-500-2566</a>
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <strong>Direct Email:</strong><br />
-              <a href="mailto:info@coastalparadisedigital.com" style="color: var(--teal-light);">info@coastalparadisedigital.com</a>
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <strong>Location:</strong><br />
-              Fort Myers, FL<br />
-              Serving all of Southwest Florida
-            </div>
-          </div>
+          <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><div><strong>Direct Phone / Text</strong><br /><a href="tel:9415002566" class="text-teal-light">941-500-2566</a></div></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><div><strong>Direct Email</strong><br /><a href="mailto:info@coastalparadisedigital.com" class="text-teal-light">info@coastalparadisedigital.com</a></div></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><div><strong>Headquarters</strong><br />Fort Myers, FL<br />Serving all of Southwest Florida</div></div>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <div>
-          &copy; 2026 Coastal Paradise Digital. All Rights Reserved. Located in Fort Myers, FL.
-        </div>
+        <div>&copy; 2026 Coastal Paradise Digital. All Rights Reserved. Fort Myers, FL.</div>
+        <div>Month-to-Month Accountability • Local SWFL Agency</div>
       </div>
     </div>
   </footer>

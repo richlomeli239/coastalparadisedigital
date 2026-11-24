@@ -17,101 +17,282 @@
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-
-  <!-- Clear Video Background -->
-  <div class="hero-video-backdrop" style="position: fixed; z-index: 0;" aria-hidden="true">
-    <video autoplay muted loop playsinline preload="auto" poster="assets/images/og-image.png">
-      <source src="assets/videos/hero-coastal-digital.mp4" type="video/mp4" />
-      <source src="assets/videos/aerial-sunset.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-video-scrim"></div>
-  </div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Sticky Site Header -->
   <header class="site-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo-link" aria-label="Coastal Paradise Digital Home">
-        <img src="assets/images/logo.png" alt="Coastal Paradise Digital Logo" />
+        <svg class="brand-shield-svg" viewBox="0 0 110 120" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="shieldGradHeader" x1="12" y1="8" x2="98" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#D5A853"/>
+              <stop offset="52%" stop-color="#87B08A"/>
+              <stop offset="100%" stop-color="#1B7A84"/>
+            </linearGradient>
+          </defs>
+          <path class="brand-shield-outline" d="M55 6 L98 21 V58 C98 85 77 104 55 114 C33 104 12 85 12 58 V21 Z" fill="#131E29" stroke="url(#shieldGradHeader)" stroke-width="3.6"/>
+          <path d="M29 84 C30 66 32 50 36 37" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+          <path d="M36 37 C28 31 20 33 16 39 C22 38 28 39 34 41" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C30 26 22 22 16 25 C23 27 29 31 35 36" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C38 25 46 21 53 24 C46 27 41 31 37 37" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C45 33 52 38 55 45 C49 42 43 40 37 40" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <g class="brand-sun-rays">
+            <path d="M50 61 A15 15 0 0 1 78 61" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+            <line x1="64" y1="39" x2="64" y2="23" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="74" y1="42" x2="84" y2="29" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="81" y1="50" x2="92" y2="43" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="84" y1="60" x2="94" y2="60" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="54" y1="42" x2="46" y2="30" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <g class="brand-waves">
+            <path d="M22 86 C36 82 47 72 57 62 C64 55 74 58 72 67 C68 65 62 67 61 73 C68 78 81 78 92 71" stroke="#4EC0B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 95 C42 93 52 84 62 79 C70 84 80 86 90 80" stroke="#1B7A84" stroke-width="2.8" stroke-linecap="round"/>
+          </g>
+        </svg>
+        <div class="brand-wordmark">
+          <span class="brand-wordmark-top">COASTAL</span>
+          <span class="brand-wordmark-mid">PARADISE</span>
+          <span class="brand-wordmark-bot">DIGITAL</span>
+        </div>
       </a>
 
-      <!-- Navigation Links -->
       <nav aria-label="Primary Navigation">
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item has-dropdown">
             <a href="services.html" class="nav-link-dropdown">
-              Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+              Services <i class="fa-solid fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
             </a>
+            <button type="button" class="dropdown-arrow-btn" aria-label="Toggle Services Submenu" aria-expanded="false">
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
             <ul class="dropdown-menu" aria-label="Services Submenu">
-              <li><a href="google-bing-ads.html">Google &amp; Microsoft (Bing) Ads</a></li>
-              <li><a href="seo-maps.html">SEO &amp; Digital Maps</a></li>
-              <li><a href="website-design.html">Website Design &amp; E-Commerce</a></li>
-              <li><a href="social-media-ads.html">Social Media Advertising</a></li>
-              <li><a href="media-advertising.html">TV, Radio, Billboards &amp; Print</a></li>
-              <li><a href="google-business-profile.html">Google Business Profile</a></li>
-              <li><a href="customer-messaging-ai.html">Customer Messaging &amp; AI Engineering</a></li>
-              <li><a href="marketing-consulting.html">Marketing &amp; Business Consulting</a></li>
-              <li><a href="graphic-design-drone-video.html">Graphic Design &amp; Drone Video</a></li>
+              <li><a href="google-bing-ads.html"><i class="fa-brands fa-google text-gold"></i> Google &amp; Microsoft (Bing) Ads</a></li>
+              <li><a href="seo-maps.html"><i class="fa-solid fa-map-location-dot text-teal-light"></i> SEO &amp; Digital Maps</a></li>
+              <li><a href="website-design.html"><i class="fa-solid fa-laptop-code text-gold"></i> Website Design &amp; E-Commerce</a></li>
+              <li><a href="social-media-ads.html"><i class="fa-brands fa-meta text-teal-light"></i> Social Media Advertising</a></li>
+              <li><a href="media-advertising.html"><i class="fa-solid fa-tower-broadcast text-gold"></i> TV, Radio, Billboards &amp; Print</a></li>
+              <li><a href="google-business-profile.html"><i class="fa-solid fa-star text-teal-light"></i> Google Business Profile</a></li>
+              <li><a href="customer-messaging-ai.html"><i class="fa-solid fa-comments text-gold"></i> Customer Messaging &amp; AI</a></li>
+              <li><a href="marketing-consulting.html"><i class="fa-solid fa-handshake-angle text-teal-light"></i> Marketing &amp; Business Consulting</a></li>
+              <li><a href="graphic-design-drone-video.html"><i class="fa-solid fa-video text-gold"></i> Graphic Design &amp; Drone Video</a></li>
+              <li class="dropdown-view-all"><a href="services.html">View All 9 Services <i class="fa-solid fa-arrow-right"></i></a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="cases.html">Case Studies</a></li>
+          <li class="nav-item"><a href="index.html#about">About Us</a></li>
           <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          <li class="nav-item mobile-only-nav-item">
+            <button type="button" class="btn-outline" style="width: 100%; justify-content: center; margin-top: 8px;" onclick="openPaymentModal()">
+              <i class="fa-solid fa-lock"></i> Client Pay Retainer
+            </button>
+          </li>
         </ul>
       </nav>
 
-      <!-- Nav Actions -->
       <div class="nav-actions">
         <a href="tel:9415002566" class="phone-quick-pill" title="Call 941-500-2566" aria-label="Call 941-500-2566">
-          <i class="fa-solid fa-phone"></i>
-          <span class="pill-phone-label">Call</span>
-          <span class="pill-phone-number">941-500-2566</span>
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>941-500-2566</span>
         </a>
         <a href="mailto:info@coastalparadisedigital.com" class="email-quick-pill" title="Email info@coastalparadisedigital.com" aria-label="Email info@coastalparadisedigital.com">
-          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           <span>Email</span>
         </a>
+        <a href="contact.html" class="btn-primary nav-cta-audit">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i> Free Audit
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <main id="main-content" style="position: relative; z-index: 2; min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 100px 20px;">
-    <div class="container" style="max-width: 680px; text-align: center;">
-      <div class="quote-form-card" style="padding: 50px 30px;">
-        <div style="font-size: 5rem; font-weight: 900; font-family: var(--font-heading); color: var(--teal-light); line-height: 1; margin-bottom: 16px;">
-          404
-        </div>
-        <h1 style="color: #ffffff; font-size: 1.8rem; margin-bottom: 16px;">
-          Page Not Found
-        </h1>
-        <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7; margin-bottom: 32px;">
-          The page you are looking for may have been moved, renamed, or no longer exists. Let's get you back on track:
-        </p>
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
-          <a href="index.html" class="btn-primary" style="padding: 12px 26px;">
-            <i class="fa-solid fa-house"></i> Return Home
-          </a>
-          <a href="services.html" class="btn-secondary" style="padding: 12px 24px;">
-            <i class="fa-solid fa-layer-group"></i> Explore Services
-          </a>
-          <a href="contact.html" class="btn-secondary" style="padding: 12px 24px;">
-            <i class="fa-solid fa-paper-plane"></i> Contact Us
-          </a>
-        </div>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">
-          Need immediate assistance? Call us directly at <a href="tel:9415002566" style="color: var(--teal-light);">941-500-2566</a>.
-        </p>
+  <main id="main-content">
+    <section class="subpage-hero" style="min-height: 70vh;">
+      <div class="hero-video-backdrop" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/images/vivid-coastal-drone.jpg">
+          <source src="assets/videos/aerial-sunset.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-scrim"></div>
       </div>
-    </div>
+      <div class="container" style="max-width: 680px; text-align: center;">
+        <div class="badge-tag"><i class="fa-solid fa-compass"></i> Error 404</div>
+        <h1 class="section-title" style="font-size: clamp(3rem, 7vw, 5rem); margin-bottom: 10px;">404 — Page Not Found</h1>
+        <p class="section-subtitle" style="margin-bottom: 30px;">
+          The page you are looking for may have moved or been renamed. Let’s get you back to growing your business.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="index.html" class="btn-primary"><i class="fa-solid fa-house"></i> Return Home</a>
+          <a href="services.html" class="btn-secondary"><i class="fa-solid fa-layer-group"></i> Explore Services</a>
+          <a href="contact.html" class="btn-outline"><i class="fa-solid fa-bolt"></i> Free Marketing Audit</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Retainer Payment Modal -->
+  <div id="paymentModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="payment-modal-box">
+      <button type="button" class="close-modal-btn" id="closePaymentModal" aria-label="Close Payment Modal">&times;</button>
+      <h3 id="modalTitle" class="modal-title">Client Retainer &amp; Invoice Payments</h3>
+      <p class="modal-subtitle">Coastal Paradise Digital accepts instant bank transfers via Zelle®, digital invoicing (Credit Card / ACH), or direct phone confirmation.</p>
+      <div class="payment-option-card">
+        <div class="payment-option-header">
+          <span class="payment-option-title"><i class="fa-solid fa-bolt text-gold"></i> Zelle® Direct Transfer</span>
+          <span class="payment-badge">Instant • Zero Fees</span>
+        </div>
+        <p class="payment-desc">Send retainer deposits directly from your banking app with zero transaction fees.</p>
+        <div class="payment-info-box">
+          Zelle Phone: <strong>941-500-2566</strong><br />
+          Zelle Email: <strong>info@coastalparadisedigital.com</strong><br />
+          Registered Name: <strong>Coastal Paradise Digital</strong>
+        </div>
+        <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" class="btn-outline" style="font-size: 0.78rem; padding: 7px 14px;" data-copy="info@coastalparadisedigital.com"><i class="fa-regular fa-copy"></i> Copy Email</button>
+          <button type="button" class="btn-outline" style="font-size: 0.78rem; padding: 7px 14px;" data-copy="9415002566"><i class="fa-regular fa-copy"></i> Copy Phone</button>
+        </div>
+      </div>
+      <div class="payment-option-card">
+        <div class="payment-option-header">
+          <span class="payment-option-title"><i class="fa-solid fa-file-invoice-dollar text-teal-light"></i> Request Retainer Invoice &amp; Agreement</span>
+          <span class="payment-badge">Credit Card / ACH</span>
+        </div>
+        <p class="payment-desc">Need a formal digital agreement and itemized invoice? We accept all major credit cards and ACH transfers.</p>
+        <a href="contact.html" class="btn-secondary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-check"></i> Request Invoice via Contact Form
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <button type="button" id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Open Digital Concierge Chat" aria-expanded="false">
+    <i class="fa-solid fa-comments"></i>
+    <span class="chatbot-unread-badge">1</span>
+  </button>
+  <div id="chatbotWindow" class="chatbot-window" role="dialog" aria-label="Coastal Paradise Digital Assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-identity">
+        <div class="chatbot-avatar"><i class="fa-solid fa-comments"></i></div>
+        <div class="chatbot-meta">
+          <h5>Coastal Paradise Support</h5>
+          <span><i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> Online • Fast Answers</span>
+        </div>
+      </div>
+      <button type="button" id="chatbotCloseBtn" class="chatbot-close-btn" aria-label="Close Chat">&times;</button>
+    </div>
+    <div id="chatbotMessages" class="chatbot-messages"></div>
+    <div class="chatbot-input-bar">
+      <input type="text" id="chatbotInput" placeholder="Ask about audits, services, pricing..." />
+      <button type="button" id="chatbotSendBtn" class="chatbot-send-btn" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Sticky Mobile Conversion Bar -->
+  <div class="mobile-sticky-cta" aria-label="Quick Contact Actions">
+    <a href="tel:9415002566" class="btn-secondary"><i class="fa-solid fa-phone"></i> Call Now</a>
+    <a href="contact.html" class="btn-primary"><i class="fa-solid fa-bolt"></i> Free Audit</a>
+  </div>
+
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="container" style="text-align: center; padding: 30px 20px; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255, 255, 255, 0.06);">
-      &copy; 2026 Coastal Paradise Digital. Fort Myers, FL. All Rights Reserved.
+    <div class="container">
+      <div class="footer-cta-bar">
+        <div>
+          <span class="badge-tag" style="margin-bottom: 6px;"><i class="fa-solid fa-phone"></i> Direct Local Access</span>
+          <h3 class="footer-cta-heading">Speak Directly With Our Fort Myers Team</h3>
+        </div>
+        <div class="footer-cta-buttons">
+          <a href="contact.html" class="btn-primary"><i class="fa-solid fa-bolt"></i> Free Marketing Audit</a>
+          <a href="tel:9415002566" class="btn-secondary"><i class="fa-solid fa-phone"></i> 941-500-2566</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo-link" aria-label="Coastal Paradise Digital Home">
+            <svg class="brand-shield-svg" viewBox="0 0 110 120" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="shieldGradFooter" x1="12" y1="8" x2="98" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#D5A853"/>
+              <stop offset="52%" stop-color="#87B08A"/>
+              <stop offset="100%" stop-color="#1B7A84"/>
+            </linearGradient>
+          </defs>
+          <path d="M55 6 L98 21 V58 C98 85 77 104 55 114 C33 104 12 85 12 58 V21 Z" fill="#131E29" stroke="url(#shieldGradFooter)" stroke-width="3.6"/>
+          <path d="M29 84 C30 66 32 50 36 37" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+          <path d="M36 37 C28 31 20 33 16 39 C22 38 28 39 34 41" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C30 26 22 22 16 25 C23 27 29 31 35 36" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C38 25 46 21 53 24 C46 27 41 31 37 37" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 37 C45 33 52 38 55 45 C49 42 43 40 37 40" stroke="#D5A853" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <g>
+            <path d="M50 61 A15 15 0 0 1 78 61" stroke="#D5A853" stroke-width="3" stroke-linecap="round"/>
+            <line x1="64" y1="39" x2="64" y2="23" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="74" y1="42" x2="84" y2="29" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="81" y1="50" x2="92" y2="43" stroke="#D5A853" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="84" y1="60" x2="94" y2="60" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="54" y1="42" x2="46" y2="30" stroke="#1B7A84" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <g>
+            <path d="M22 86 C36 82 47 72 57 62 C64 55 74 58 72 67 C68 65 62 67 61 73 C68 78 81 78 92 71" stroke="#4EC0B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 95 C42 93 52 84 62 79 C70 84 80 86 90 80" stroke="#1B7A84" stroke-width="2.8" stroke-linecap="round"/>
+          </g>
+        </svg>
+            <div class="brand-wordmark">
+              <span class="brand-wordmark-top">COASTAL</span>
+              <span class="brand-wordmark-mid">PARADISE</span>
+              <span class="brand-wordmark-bot">DIGITAL</span>
+            </div>
+          </a>
+          <p>Small business marketing, Google advertising, custom website design, and local SEO engineered in Fort Myers for Southwest Florida growth.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="google-bing-ads.html">Google &amp; Microsoft (Bing) Ads</a></li>
+            <li><a href="seo-maps.html">SEO &amp; Digital Maps</a></li>
+            <li><a href="website-design.html">Website Design &amp; E-Commerce</a></li>
+            <li><a href="social-media-ads.html">Social Media Advertising</a></li>
+            <li><a href="media-advertising.html">TV, Radio, Billboards &amp; Print</a></li>
+            <li><a href="google-business-profile.html">Google Business Profile</a></li>
+            <li><a href="customer-messaging-ai.html">Customer Messaging &amp; AI</a></li>
+            <li><a href="marketing-consulting.html">Marketing &amp; Business Consulting</a></li>
+            <li><a href="graphic-design-drone-video.html">Graphic Design &amp; Drone Video</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="cases.html">Case Studies</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="contact.html">Free Audit / Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><button type="button" onclick="openPaymentModal()">Pay Retainer</button></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><div><strong>Direct Phone / Text</strong><br /><a href="tel:9415002566" class="text-teal-light">941-500-2566</a></div></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><div><strong>Direct Email</strong><br /><a href="mailto:info@coastalparadisedigital.com" class="text-teal-light">info@coastalparadisedigital.com</a></div></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><div><strong>Headquarters</strong><br />Fort Myers, FL<br />Serving all of Southwest Florida</div></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Coastal Paradise Digital. All Rights Reserved. Fort Myers, FL.</div>
+        <div>Month-to-Month Accountability • Local SWFL Agency</div>
+      </div>
     </div>
   </footer>
 
