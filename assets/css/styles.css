@@ -229,17 +229,21 @@ img, video {
 
 .section-navy .badge-tag,
 .hero-section .badge-tag,
-.subpage-hero .badge-tag {
-  background: rgba(213, 168, 83, 0.14);
-  border-color: rgba(213, 168, 83, 0.45);
+.subpage-hero .badge-tag,
+.cta-banner-section .badge-tag,
+.site-footer .badge-tag {
+  background: rgba(213, 168, 83, 0.18);
+  border-color: rgba(213, 168, 83, 0.55);
   color: var(--gold-light);
 }
 
 .section-navy .badge-tag.teal-tag,
 .hero-section .badge-tag.teal-tag,
-.subpage-hero .badge-tag.teal-tag {
-  background: rgba(20, 150, 158, 0.18);
-  border-color: rgba(78, 192, 184, 0.45);
+.subpage-hero .badge-tag.teal-tag,
+.cta-banner-section .badge-tag.teal-tag,
+.site-footer .badge-tag.teal-tag {
+  background: rgba(20, 150, 158, 0.22);
+  border-color: rgba(78, 192, 184, 0.5);
   color: var(--teal-light);
 }
 
@@ -281,7 +285,9 @@ img, video {
 
 .section-navy .section-title,
 .hero-section .section-title,
-.subpage-hero .section-title {
+.subpage-hero .section-title,
+.cta-banner-section .section-title,
+.site-footer .section-title {
   color: var(--text-pure);
 }
 
@@ -291,7 +297,9 @@ img, video {
 
 .section-navy .highlight-gold,
 .hero-section .highlight-gold,
-.subpage-hero .highlight-gold {
+.subpage-hero .highlight-gold,
+.cta-banner-section .highlight-gold,
+.site-footer .highlight-gold {
   color: var(--gold-light);
 }
 
@@ -301,7 +309,9 @@ img, video {
 
 .section-navy .highlight-teal,
 .hero-section .highlight-teal,
-.subpage-hero .highlight-teal {
+.subpage-hero .highlight-teal,
+.cta-banner-section .highlight-teal,
+.site-footer .highlight-teal {
   color: var(--teal-light);
 }
 
@@ -313,8 +323,10 @@ img, video {
 
 .section-navy .section-subtitle,
 .hero-section .section-subtitle,
-.subpage-hero .section-subtitle {
-  color: var(--text-on-dark);
+.subpage-hero .section-subtitle,
+.cta-banner-section .section-subtitle,
+.site-footer .section-subtitle {
+  color: #F1F5F9;
 }
 
 /* ========================================================
@@ -1825,15 +1837,15 @@ img, video {
 
 .site-footer {
   background: var(--navy-void);
-  color: var(--text-on-dark);
+  color: #F1F5F9;
   padding: 64px 0 32px;
   margin-top: auto;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-cta-bar {
   background: var(--navy-surface);
-  border: 1px solid rgba(213, 168, 83, 0.35);
+  border: 1px solid rgba(213, 168, 83, 0.45);
   border-radius: var(--radius-lg);
   padding: 28px 32px;
   margin-bottom: 52px;
@@ -1848,7 +1860,7 @@ img, video {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--text-pure);
+  color: #FFFFFF;
 }
 
 .footer-cta-buttons {
@@ -1862,12 +1874,12 @@ img, video {
   grid-template-columns: 1.35fr 1fr 0.85fr 1fr;
   gap: 36px;
   padding-bottom: 42px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .footer-brand p {
-  font-size: 0.9rem;
-  color: var(--text-muted-dark);
+  font-size: 0.92rem;
+  color: #E2E8F0;
   margin: 14px 0 18px;
 }
 
@@ -1877,7 +1889,7 @@ img, video {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--gold-light);
+  color: #F3D382;
   margin-bottom: 16px;
 }
 
@@ -1890,14 +1902,14 @@ img, video {
 
 .footer-links a,
 .footer-links button {
-  font-size: 0.88rem;
-  color: var(--text-muted-dark);
+  font-size: 0.9rem;
+  color: #E2E8F0;
   text-align: left;
 }
 
 .footer-links a:hover,
 .footer-links button:hover {
-  color: var(--gold-light);
+  color: #F3D382;
 }
 
 .footer-contact-item {
@@ -1905,11 +1917,16 @@ img, video {
   gap: 12px;
   align-items: flex-start;
   margin-bottom: 14px;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
+  color: #F1F5F9;
+}
+
+.footer-contact-item strong {
+  color: #FFFFFF;
 }
 
 .footer-contact-item i {
-  color: var(--teal-light);
+  color: #6EE7DF;
   margin-top: 4px;
 }
 
@@ -1920,8 +1937,8 @@ img, video {
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  font-size: 0.84rem;
-  color: var(--text-muted-dark);
+  font-size: 0.86rem;
+  color: #CBD5E1;
 }
 
 /* ========================================================
