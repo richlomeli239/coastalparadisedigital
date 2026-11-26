@@ -1379,13 +1379,18 @@ img, video {
 .cpd-difference .comparison-list li i { color: var(--gold-light); margin-top: 4px; }
 
 /* ========================================================
-   ABOUT US SECTION (FOUNDER HEADSHOT + CREDIBILITY)
+   ABOUT US SECTION (CREDIBILITY & LEADERSHIP)
    ======================================================== */
 .about-grid {
   display: grid;
   grid-template-columns: 0.88fr 1.12fr;
   gap: 52px;
   align-items: center;
+}
+
+.about-content-single {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .about-portrait-frame {
@@ -1619,6 +1624,63 @@ img, video {
 .contact-sidebar-card h3 {
   font-family: var(--font-heading);
   color: var(--text-pure);
+}
+
+.contact-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-animated-logo {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(27, 122, 132, 0.35), rgba(11, 20, 29, 0.92));
+  border: 2px solid rgba(213, 168, 83, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 22px rgba(213, 168, 83, 0.2);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+}
+
+.contact-shield-svg {
+  width: 44px;
+  height: 48px;
+  animation: contactLogoFloat 4.2s ease-in-out infinite;
+}
+
+.contact-shield-svg .brand-sun-rays {
+  animation: contactSunGlow 4.2s ease-in-out infinite;
+}
+
+.contact-shield-svg .brand-waves {
+  animation: contactWaveDrift 3.6s ease-in-out infinite;
+}
+
+.contact-sidebar-card:hover .contact-animated-logo {
+  transform: scale(1.06);
+  border-color: var(--gold-primary);
+}
+
+@keyframes contactLogoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2.5px); }
+}
+
+@keyframes contactSunGlow {
+  0%, 100% { transform: rotate(0deg) scale(1); opacity: 0.92; }
+  50% { transform: rotate(6deg) scale(1.05); opacity: 1; }
+}
+
+@keyframes contactWaveDrift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(1.5px); }
 }
 
 .quote-form-card {
